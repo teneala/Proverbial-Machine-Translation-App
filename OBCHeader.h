@@ -17,15 +17,27 @@
 
     
 @interface OBCClass: NSObject
+// [getBusStops: arg1 forTime: arg2]
+
+-(NSString *)removeUser:(NSString *) prov FromCPP: (int)provCount Additional: (NSString*) flag;
+-(NSString *)storeStopWordsFromCPP:(NSString *) prov;
+-(NSString*)storeProverbs:(NSString *) prov FromCPP: (NSString *)store Additional: (NSString*) flag;
+-(NSString*)storeIngles:(NSString *) prov FromCPP: (NSString *)store Additional: (NSString*) flag;
+-(NSString*)storeStopInglesFromCPP:(NSString *) prov;
 
 
--(void)getRemainingFromCPP;
--(void)storeProverbsFromCPP;
--(void)storeStopWordsFromCPP;
+//-(void)storeProverbsFromCPP;
+//-(void)storeStopWordsFromCPP;
+
 -(void)removeStopWordsFromCPP;
--(void)createListFromCPP;
-//-(void)hashBrownFromCPP:(NSString *) prov;
--(NSString *)removeUserFromCPP:(NSString *) prov;
+//-(void)createListFromCPP;
+-(void)getRemainingFromCPP;
+-(void)houze;
+
+
+
+
+
 @end
 
 
